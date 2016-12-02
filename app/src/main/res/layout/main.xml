@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/screen_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="1"
+    >
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:weightSum="1">
+        <TextView
+            android:scrollbars="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBrowser"
+            android:gravity="left"
+            android:text="@string/android_browser"
+            android:textStyle="bold|italic" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:id="@+id/btBrowserEnable"
+            android:onClick="buttonClicked"
+            android:enabled="true" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disable"
+            android:id="@+id/btBrowserDisable"
+            android:onClick="buttonClicked" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:weightSum="1">
+        <TextView
+            android:scrollbars="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMarket"
+            android:gravity="left"
+            android:text="@string/android_market"
+            android:textStyle="bold|italic" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:id="@+id/btMarketEnable"
+            android:onClick="buttonClicked" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disable"
+            android:id="@+id/btMarketDisable"
+            android:onClick="buttonClicked" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:weightSum="1">
+        <TextView
+            android:scrollbars="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVoiceDialer"
+            android:gravity="left"
+            android:text="@string/voice_dialer"
+            android:textStyle="bold|italic" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:id="@+id/btDialerEnable"
+            android:onClick="buttonClicked" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disable"
+            android:id="@+id/btDialerDisable"
+            android:onClick="buttonClicked" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:weightSum="1">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvYouTube"
+            android:gravity="left"
+            android:text="@string/youtube"
+            android:textStyle="bold|italic" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:id="@+id/btYouTubeEnable"
+            android:onClick="buttonClicked" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disable"
+            android:id="@+id/btYouTubeDisable"
+            android:onClick="buttonClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+    <TextView android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPkgName"
+        android:text="@string/pkg_name"
+        android:textStyle="bold|italic"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint= "@string/default_pkg_name"    />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable"
+            android:id="@+id/btAppEnable"
+            android:onClick="buttonClicked" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/disable"
+            android:id="@+id/btAppDisable"
+            android:onClick="buttonClicked" />
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_enabled_app_list"
+        android:id="@+id/btShowEnabledApp"
+        android:onClick="buttonClicked" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_disabled_app_list"
+        android:id="@+id/btShowDisabledApp"
+        android:onClick="buttonClicked" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_all_disabled_apps"
+        android:id="@+id/btGetEnableAllApp"
+        android:onClick="buttonClicked" />
+
+
+ 
+ </LinearLayout>

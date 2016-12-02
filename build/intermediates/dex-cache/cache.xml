@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\c1.chan\Downloads\Junho Dec 22\App_Control_v2.1\app\libs\edm.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0c406a6b55caf1aa0076498f9586701f5371e8c6">
+        <dex dex="C:\Users\c1.chan\Downloads\Junho Dec 22\App_Control_v2.1\app\build\intermediates\pre-dexed\debug\edm-e54c216e0741d41fac8e20092ab742789ddf47e5.jar" />
+    </item>
+    <item
+        jar="C:\Users\c1.chan\Downloads\Junho Dec 22\App_Control_v2.1\app\libs\rc.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="929847c187310d0dfc292312fba16763f8777757">
+        <dex dex="C:\Users\c1.chan\Downloads\Junho Dec 22\App_Control_v2.1\app\build\intermediates\pre-dexed\debug\rc-811a5be2de5da1ff5f547c549ad6f011bdb0c243.jar" />
+    </item>
+    <item
+        jar="C:\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\c1.chan\Downloads\Junho Dec 22\App_Control_v2.1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-a22c0f82dd3cd2e296e0f724b466cb05c2a80ae8.jar" />
+    </item>
+
+</items>

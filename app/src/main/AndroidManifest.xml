@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samsung.android.sdk.b2b.samples.appcontrol"
+    android:versionCode="0"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.samsung.android.sdk.b2b.samples.appcontrol.SAApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sa_container" >
+        <activity
+            android:name="com.samsung.android.sdk.b2b.samples.appcontrol.apis.AdminLicenseActivation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".apis.MainActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.samsung.android.sdk.b2b.samples.appcontrol.apis.AboutActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.samsung.android.sdk.b2b.samples.appcontrol.apis.AdminLicenseActivation" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.samsung.android.sdk.b2b.samples.appcontrol.apis.AdminLicenseActivation" />
+        </activity>
+
+        <receiver
+            android:name="com.samsung.android.sdk.b2b.samples.appcontrol.receivers.DeviceAdministrator"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/enterprise_device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.samsung.android.sdk.b2b.samples.appcontrol.receivers.LicenseReceiver" >
+            <intent-filter>
+                <action android:name="edm.intent.action.license.status" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
